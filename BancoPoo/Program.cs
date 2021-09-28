@@ -43,7 +43,7 @@ namespace BancoPpOO
                                 Console.Write($"\n\t\tSaldo: {conta.saldo}");
                             }
                             else
-                                Console.WriteLine("Adcione um cliente para ver um saldo algo...");
+                                Console.WriteLine("Adcione um cliente para ver um saldo ");
 
                             break;
                         case Menu.Depositar:
@@ -56,11 +56,11 @@ namespace BancoPpOO
                                 conta.Depositar(valor);
                                 if(valor < 0)
                                 {
-                                    Console.Write("VAlor não depositado, informe um valor maior que zero.");
+                                    Console.Write("VAlor não depositado, informe um valor maior que zero ");
                                 }
                             }
                             else
-                                Console.WriteLine("Adcione um cliente para depositar algo...");
+                                Console.WriteLine("Adcione um cliente para depositar algo ");
                            
                             break;
                         case Menu.Sacar:
@@ -76,7 +76,7 @@ namespace BancoPpOO
                             else
                             {
                                 sim = true;
-                                Console.WriteLine("Adcione um cliente para realizar um saque...");
+                                Console.WriteLine("Adcione um cliente para realizar um saque ");
                             }
                             
                             if (valorSaque > 0 && valorSaque <= conta.saldo)
